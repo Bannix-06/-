@@ -1,0 +1,62 @@
+/*Фон*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-image: url("Slide 16_9 - 5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/*Заголовок*/
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color:aqua;
+    font-size: 50px;
+}
+
+/*Второстепенные заголовки*/
+h2 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+}
+
+/* Смешарики */
+.preview1 {
+    position: absolute;
+    width: 472px;
+    height: 442px;
+    left: 376px;
+    top: 254px;
+
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+
+}
+.preview1:hover {
+    transform: scale(1.1);
+}
+
+/*Гвинт*/
+.preview2 {
+    position: absolute;
+    width: 472px;
+    height: 442px;
+    left: 1514px;
+    top: 434px;
+
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+
+}
+.preview2:hover {
+    transform: scale(1.1);
+}
