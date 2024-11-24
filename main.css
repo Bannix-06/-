@@ -1,0 +1,48 @@
+/*Фон*/
+body {
+  background: url("file:///C:/Users/79653/OneDrive/Рабочий%20стол/Сайт%20с%20викторинами/Slide%2016_9%20-%205%20(1).jpg");
+}
+/*Заголовок*/
+h1 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color:aqua;
+  font-size: 50px;
+}
+/*Второстепенные заголовки*/
+h2 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color:white;
+  font-size: 30px;
+}
+/* Смешарики */
+.preview1 {
+  position: absolute;
+  width: 472px;
+  height: 442px;
+  left: 250px;
+  top: 254px;
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+}
+.preview1:hover {
+  transform: scale(1.1);
+}
+/*Гвинт*/
+.preview2 {
+  position: absolute;
+  width: 472px;
+  height: 442px;
+  left: 1214px;
+  top: 300px;
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+}
+.preview2:hover {
+  transform: scale(1.1);
+}
+
+
