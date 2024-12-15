@@ -79,20 +79,20 @@
     </style>
 </head>
 <body>
-    <img src="вопрос_1.jpg" alt="Смешарики" class="center">
-    <h1>Вопрос 1</h1>
-    <h2>В каком году вышла первая серия смешариков?</h2>
+    <img src="вопрос_3.jpg" alt="Смешарики" class="center">
+    <h1>Вопрос 3</h1>
+    <h2>Кто спас Пина во 2-ом эпизоде серии "Космическая одиссея"?</h2>
 
     <div class="button-container">
-        <button class="answer" onclick="checkAnswer(false)">1) 2005</button>
-        <button class="answer" onclick="checkAnswer(true)">2) 2004</button>
-        <button class="answer" onclick="checkAnswer(false)">3) 2003</button>
-        <button class="answer" onclick="checkAnswer(false)">4) 2002</button>
+        <button class="answer" onclick="checkAnswer(true)">1) Биби</button>
+        <button class="answer" onclick="checkAnswer(false)">2) Железная няня</button>
+        <button class="answer" onclick="checkAnswer(false)">3) Крош</button>
+        <button class="answer" onclick="checkAnswer(false)">4) Ежик</button>
     </div>
 
     <div style="text-align:center; margin-top: 35px;" class="result hidden" id="result"></div>
     <div style="text-align:center">
-        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='question2.html'">Следующий вопрос</button>
+        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='question4.html'">Следующий вопрос</button>
     </div>
 
     <script>
@@ -104,7 +104,7 @@
                 resultDiv.textContent = "Верно!"; 
             } 
             else {
-                resultDiv.textContent = "Неверно. Первая серия Смешариков вышла в 2004 году.";
+                resultDiv.textContent = "Неверно. Пина спас Биби";
             }
 
 
