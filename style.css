@@ -1,62 +1,75 @@
 /*Фон*/
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    text-align: center;
     background-image: url("Slide 16_9 - 5.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/*Заголовок*/
+/* Заголовок */
 h1 {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color:aqua;
+    color: aqua;
     font-size: 50px;
+    margin-top: 20px;
+}
+button h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: white;
 }
 
-/*Второстепенные заголовки*/
-h2 {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color:white;
-    font-size: 30px;
+/* Контейнер для кнопок */
+.selection {
+    position: relative;
+    flex: 1; /* Занимает оставшееся пространство */
 }
 
 /* Смешарики */
 .preview1 {
-    position: absolute;
-    width: 472px;
-    height: 442px;
-    left: 376px;
-    top: 254px;
-
-    border: none;
-    border-radius: 100%;
-    background-color: transparent;
-
+    left: 20%; /* Расположение слева от экрана */
+    top: 17%; /* Вертикальное расположение */
 }
+/* Не смешарики */
+.preview2 {
+    right: 24%; /* Расположение справа от экрана */
+    top: 38%; /* Вертикальное расположение */
+}
+.preview2,
+.preview1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.preview2:hover,
 .preview1:hover {
     transform: scale(1.1);
 }
 
-/*Гвинт*/
-.preview2 {
-    position: absolute;
-    width: 472px;
-    height: 442px;
-    left: 1514px;
-    top: 434px;
-
-    border: none;
-    border-radius: 100%;
-    background-color: transparent;
-
+/* Превью */
+.preview1 img,
+.preview2 img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.7);
+    border-radius: 50%;
+    object-fit: cover;
 }
-.preview2:hover {
-    transform: scale(1.1);
+
+.preview1 h2,
+.preview2 h2 {
+    position: relative;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 100px;
 }
