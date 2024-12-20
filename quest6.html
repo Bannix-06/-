@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метро</title>
+    <style>
+        body {
+            background: url("Slide 16_9 - 5 (1).jpg");
+        }
+        
+        h1 {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: aqua;
+            font-size: 35px;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: black;
+            font-size: 40px;
+        }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
+
+        .result {
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        img {
+            position: absolute;
+            width: 390px;
+            height: 320px;
+            left: 42%;
+            top: 15%;
+        }
+
+        button {
+            /* отступы внутри кнопок */
+            padding: 0.5% 1%; 
+            /* размер шрифта */
+            font-size: 20px;
+            /* цвет фона */
+            background-color: #0099FF;
+            /* цвет текста */
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            /* курсор при наведении */
+            cursor: pointer;
+            /* переход цвета фона */
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            /* цвет фона при наведении */
+            background-color: #0056b3;
+        }
+
+        .button-container {
+            display: flex;
+            /* расстояние между кнопками */
+            gap: 1%;
+            justify-content: center;
+            /* отступ сверху */
+            margin-top: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="в_6.jpg" alt="Метро" class="center">
+    <h1>Вопрос 6</h1>
+    <h2>Почему нельзя смотреть на кремлёвскую звезду?</h2>
+
+    <div class="button-container">
+        <button class="answer" onclick="checkAnswer(false)">1) Звезда выжигала глаза</button>
+        <button class="answer" onclick="checkAnswer(false)">2) Звезда рушила психику</button>
+        <button class="answer" onclick="checkAnswer(true)">3) Звезда гипнотизировала</button>
+        <button class="answer" onclick="checkAnswer(false)">4) Звезда обращала посмотрящих в мутантов</button>
+    </div>
+
+    <div style="text-align:center; margin-top: 35px;" class="result hidden" id="result"></div>
+    <div style="text-align:center">
+        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='quest7.html'">Следующий вопрос</button>
+    </div>
+
+    <script>
+        function checkAnswer(isCorrect) {
+            const resultDiv = document.getElementById('result');
+            const nextButton = document.getElementById('nextButton');
+
+            if (isCorrect) {
+                resultDiv.textContent = "Верно!"; 
+            } 
+            else {
+                resultDiv.textContent = "Неверно. Звезда гипнотизировала. Загипнотизированная жертва, сама того не зная, попадала прямо в Кремль, где и погибала.";
+            }
+
+
+            resultDiv.classList.remove('hidden');
+            nextButton.classList.remove('hidden');
+            // отключение кнопок после выбора ответа
+            document.querySelectorAll('.answer').forEach(button => button.disabled = true);
+        }
+    </script>
+</body>
+</html>
