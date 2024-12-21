@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты</title>
+
+    <style>
+        body {
+            background-image: url("Slide 16_9 - 5.jpg");
+        }
+
+        .result {
+            width: 300px; /* Ширина прямоугольника */
+            height: 150px; /* Высота прямоугольника */
+            background-color: #3399FF; /* Цвет фона */
+            border-radius: 20px; /* Закругление углов */
+            display: flex; /* Используем flexbox для центрирования содержимого */
+            flex-direction: column; /* Располагаем элементы в колонку */
+            justify-content: center; /* Центрируем по вертикали */
+            align-items: center; /* Центрируем по горизонтали */
+            text-align: center; /* Центрируем текст */
+            padding: 10px; /* Отступы внутри прямоугольника */
+            position: relative;
+            left: 460px;
+            top: 200px;
+            font-size: 17px;
+        }
+
+        button {
+            margin-top: 15px; 
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            font-size: 16px; /* Размер шрифта кнопки */
+            cursor: pointer; /* Указатель курсора при наведении */
+            border-radius: 10px;
+            background-color: #66CCFF;
+            bottom: 12px;
+            position: relative;
+        }
+        button:hover {
+            background-color: #EEFFFF;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="result">
+        <h3>Спасибо за прохождение викторины! <br></h3>
+        <button onclick="location.href='index.html'">Вернуться на главный экран</button>
+    </div>
+</body>
+</html>
