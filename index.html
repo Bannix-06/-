@@ -8,9 +8,10 @@
 </head>
 <body>
     <audio id="hoverSound" src="sound.mp3"></audio>
+    <audio id="smhoverSound" src="smsound.mp3"></audio>
     <h1>Викторины</h1>
     <div class="selection">
-        <button type="button" class="preview1" onclick="location.href='question1.html'">
+        <button id="preview1" type="button" class="preview1" onclick="location.href='question1.html'">
             <img src="смешарики.png" alt="Викторина по смешарикам">
             <h2>Смешарики</h2>
             </a>
@@ -21,6 +22,19 @@
         </button>
     </div>
     <script>
+        // Получаем кнопку и создаем объект аудио
+        const preview1Button = document.getElementById('preview1');
+        const smsound = document.getElementById('smhoverSound');
+        
+        // Событие наведения курсора на кнопку
+        preview1Button.addEventListener('mouseenter', () => {
+            smhoverSound.currentTime = 0; // Сбросить время воспроизведения
+            smhoverSound.play(); // Воспроизвести звук
+        });
+        preview1Button.addEventListener('mouseleave', () => {
+            smhoverSound.pause(); // Пауза
+            smhoverSound.currentTime = 0;
+        })
         // Получаем кнопку и создаем объект аудио
         const preview2Button = document.getElementById('preview2');
         const sound = document.getElementById('hoverSound');
