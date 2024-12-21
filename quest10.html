@@ -6,7 +6,17 @@
     <title>Метро</title>
     <style>
         body {
-            background: url("Slide 16_9 - 5 (1).jpg");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url("Slide 16_9 - 6.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         
         h1 {
@@ -19,7 +29,7 @@
         h2 {
             font-family: Arial, sans-serif;
             text-align: center;
-            color: black;
+            color: gray;
             font-size: 40px;
         }
 
@@ -51,7 +61,7 @@
             /* размер шрифта */
             font-size: 20px;
             /* цвет фона */
-            background-color: #0099FF;
+            background-color: #610d0d00;
             /* цвет текста */
             color: aliceblue;
             border: none;
@@ -90,9 +100,9 @@
         <button class="answer" onclick="checkAnswer(false)">4) Таганская</button>
     </div>
 
-    <div style="text-align:center; margin-top: 35px;" class="result hidden" id="result"></div>
+    <div style="text-align:center; margin-top: 35px; color:aqua;" class="result hidden" id="result"></div>
     <div style="text-align:center">
-        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='https://www.wildberries.ru/catalog/8655496/detail.aspx'">Следующий вопрос</button>
+        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='https://www.wildberries.ru/catalog/8655496/detail.aspx'">Перейти к результатам</button>
     </div>
 
     <script>
