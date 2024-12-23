@@ -17,30 +17,40 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
         }
         
         h1 {
             font-family: Arial, sans-serif;
             text-align: center;
             color: aqua;
-            font-size: 35px;
+            font-size: 2.5vw;
+            margin-top: 20px;
         }
 
         h2 {
             font-family: Arial, sans-serif;
-            text-align: center;
             color: gray;
-            font-size: 40px;
+            font-size: 2.5vw;
+            margin: 10px 0;
+        }
+
+        .img-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .button-container {
-            margin-bottom: 20px;
+            margin-top: 1%;
+            margin-bottom: 12%;
         }
 
         .result {
-            margin-top: 50px;
+            margin-top: 20px;
             font-weight: bold;
-            font-size: 30px;
+            font-size: 2vw;
         }
 
         .hidden {
@@ -48,18 +58,19 @@
         }
 
         img {
-            position: absolute;
-            width: 320px;
-            height: 320px;
+            display: flex;
+            width: 50%;
+            max-width: 320px;
+            height: auto;
             left: 44%;
-            top: 15%;
+            top: 19%;
         }
 
         button {
             /* отступы внутри кнопок */
-            padding: 0.5% 1%; 
+            padding: 1% 2%; 
             /* размер шрифта */
-            font-size: 20px;
+            font-size: 30px;
             /* цвет фона */
             background-color: #0099ff00;
             /* цвет текста */
@@ -83,15 +94,35 @@
             gap: 1%;
             justify-content: center;
             /* отступ сверху */
-            margin-top: 400px;
         }
+
+        #nextButton {
+            width: 200px;
+            height: 90px;
+            font-size: 20px;
+            background-color: rgb(65, 64, 64);
+            color: aqua;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 200px;
+        }
+
+        #nextButton:hover {
+            background-color: rgb(31, 27, 27);;
+        }
+        
 
     </style>
 </head>
 <body>
-    <img src="в_1.jpg" alt="Метро" class="center">
+    
     <h1>Вопрос 1</h1>
     <h2>В каком году вышла первая книга серии "Метро"?</h2>
+
+    <div class="img-container">
+        <img src="в_1.jpg" alt="Метро" class="center">
+    </div>
 
     <div class="button-container">
         <button class="answer" onclick="checkAnswer(false)">1) 2003</button>
@@ -100,9 +131,9 @@
         <button class="answer" onclick="checkAnswer(true)">4) 2005</button>
     </div>
 
-    <div style="text-align:center; margin-top: 35px; color:aqua;" class="result hidden" id="result"></div>
+    <div style="text-align:center; margin-bottom: 30px; color:aqua;" class="result hidden" id="result"></div>
     <div style="text-align:center">
-        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='quest2.html'">Следующий вопрос</button>
+        <button class="hidden" id="nextButton" onclick="location.href='quest2.html'">Следующий вопрос</button>
     </div>
 
     <script>
