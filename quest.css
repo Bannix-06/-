@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("Slide 16_9 - 6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: aqua;
+    font-size: 2.5vw;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: gray;
+    font-size: 2.5vw;
+    margin: 10px 0;
+}
+
+.img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    margin-top: 1%;
+    margin-bottom: 12%;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.hidden {
+    display: none;
+}
+
+
+button {
+    /* отступы внутри кнопок */
+    padding: 1% 2%; 
+    /* размер шрифта */
+    font-size: 30px;
+    /* цвет фона */
+    background-color: #0099ff00;
+    /* цвет текста */
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    /* курсор при наведении */
+    cursor: pointer;
+    /* переход цвета фона */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    /* цвет фона при наведении */
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    /* расстояние между кнопками */
+    gap: 1%;
+    justify-content: center;
+    /* отступ сверху */
+}
+
+#nextButton {
+    width: 200px;
+    height: 90px;
+    font-size: 20px;
+    background-color: rgb(65, 64, 64);
+    color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 200px;
+}
+
+#nextButton:hover {
+    background-color: rgb(31, 27, 27);;
+}

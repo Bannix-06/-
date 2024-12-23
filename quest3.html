@@ -4,94 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Метро</title>
+    <link rel="stylesheet" href="quest.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-image: url("Slide 16_9 - 6.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        h1 {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: aqua;
-            font-size: 35px;
-        }
-
-        h2 {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: gray;
-            font-size: 40px;
-        }
-
-        .button-container {
-            margin-bottom: 20px;
-        }
-
-        .result {
-            margin-top: 50px;
-            font-weight: bold;
-            font-size: 30px;
-        }
-
-        .hidden {
-            display: none;
-        }
 
         img {
-            position: absolute;
-            width: 620px;
-            height: 320px;
-            left: 38%;
-            top: 175px;
-        }
-
-        button {
-            /* отступы внутри кнопок */
-            padding: 10px 20px; 
-            /* размер шрифта */
-            font-size: 20px;
-            /* цвет фона */
-            background-color: #0099ff00;
-            /* цвет текста */
-            color: aliceblue;
-            border: none;
-            border-radius: 5px;
-            /* курсор при наведении */
-            cursor: pointer;
-            /* переход цвета фона */
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            /* цвет фона при наведении */
-            background-color: #0056b3;
-        }
-
-        .button-container {
             display: flex;
-            /* расстояние между кнопками */
-            gap: 10px;
-            justify-content: center;
-            /* отступ сверху */
-            margin-top: 400px;
+            width: 50%;
+            max-width: 620px;
+            height: auto;
+            left: 44%;
+            top: 19%;
         }
-
+        
     </style>
 </head>
 <body>
-    <img src="в_3.jpg" alt="Метро" class="center">
     <h1>Вопрос 3</h1>
     <h2>Когда вышла первая игра по книге Глуховского?</h2>
+
+    <div class="img-container">
+        <img src="в_3.jpg" alt="Метро" class="center">
+    </div>
 
     <div class="button-container">
         <button class="answer" onclick="checkAnswer(false)">1) 2008</button>
@@ -100,9 +33,9 @@
         <button class="answer" onclick="checkAnswer(false)">4) 2014</button>
     </div>
 
-    <div style="text-align:center; margin-top: 35px; color:aqua;" class="result hidden" id="result"></div>
+    <div style="text-align:center; margin-bottom: 30px; color:aqua;" class="result hidden" id="result"></div>
     <div style="text-align:center">
-        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='quest4.html'">Следующий вопрос</button>
+        <button class="hidden" id="nextButton" onclick="location.href='quest4.html'">Следующий вопрос</button>
     </div>
 
     <script>
