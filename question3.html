@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Смешарики</title>
     <link rel="stylesheet" href="question.css">
+    <style>
+        img {
+            display: flex;
+            width: 50%;
+            max-width: 700px;
+            height: auto;
+            left: 44%;
+            top: 19%;
+        }
+    </style>
 </head>
 <body>
-    <img src="вопрос_3.jpg" alt="Смешарики">
     <h1>Вопрос 3</h1>
     <h2>Кто спас Пина во 2-ом эпизоде серии "Космическая одиссея"?</h2>
+
+    <div class="img-container">
+        <img src="вопрос_3.jpg" alt="Смешарики" class="center">
+    </div>
 
     <div class="button-container">
         <button class="answer" onclick="checkAnswer(true)">1) Биби</button>

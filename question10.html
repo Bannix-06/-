@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Смешарики</title>
     <link rel="stylesheet" href="question.css">
+    <style>
+        img {
+            display: flex;
+            width: 50%;
+            max-width: 700px;
+            height: auto;
+            left: 44%;
+            top: 19%;
+        }
+    </style>
 </head>
 <body>
-    <img src="вопрос_10.jpg" alt="Смешарики">
     <h1>Вопрос 10</h1>
     <h2>В какой серии появляется Черный Ловелас?</h2>
+
+    <div class="img-container">
+        <img src="вопрос_10.jpg" alt="Смешарики" class="center">
+    </div>
 
     <div class="button-container">
         <button class="answer" onclick="checkAnswer(false)">1) День рождения Нюши</button>
@@ -20,7 +33,7 @@
 
     <div style="text-align:center; margin-top: 35px;" class="result hidden" id="result"></div>
     <div style="text-align:center">
-        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='result.html'">Перейти к результатам</button>
+        <button style="width: 200px; height: 70px; margin-top: 30px;" class="hidden" id="nextButton" onclick="location.href='https://www.shararam.ru/newgame'">Перейти к результатам</button>
     </div>
 
     <script>
